@@ -15,10 +15,11 @@ Tutte da [Unsplash](https://unsplash.com), filtro "gratuite", [Licenza Unsplash]
 | uomo | George Huffman | https://unsplash.com/photos/9mDU8BxZVkA |
 | raccolto | Guillaume DHALLUIN | https://unsplash.com/photos/yMOnT7VUowA |
 | salone | Greg Trowman | https://unsplash.com/photos/jsuWg7IXx1k |
-| forbici | Matt Artz | https://unsplash.com/photos/SmocKx2oDZc |
 | ricci | Paul Siewert | https://unsplash.com/photos/dnpa8k6TGRE |
 | lunghi | Jessie Dee Dabrowski | https://unsplash.com/photos/W6cwaL7PMSw |
-| ciocca | Juan Burgos | https://unsplash.com/photos/jUF_F0k8pgA |
 
 ## Caratteri
-Bodoni Moda e Jost, licenza SIL Open Font License, ospitati in `assets/fonts/`.
+DM Serif Display (titoli) e Jost (testo), licenza SIL Open Font License, ospitati in `assets/fonts/`.
+
+## Icona e anteprima social
+Disegnate per questa demo: il ricciolo dell'icona è un tracciato SVG; l'anteprima usa la foto di copertina.

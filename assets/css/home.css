@@ -21,11 +21,12 @@ main section {
 .cover__tag {
   position: relative;
   z-index: 3;
-  padding: 0.25rem var(--gutter) 0;
-  font-size: 0.9375rem;
+  max-width: 15rem;
+  padding: 0.5rem var(--gutter) 0.9rem;
+  font-size: 1.125rem;
   font-weight: 500;
-  letter-spacing: 0.04em;
-  color: var(--ink-soft);
+  line-height: 1.3;
+  color: var(--ink);
 }
 .cover__mast {
   position: relative;
@@ -46,8 +47,8 @@ main section {
   display: block;
   margin-top: 0.1em;
   font-size: clamp(9rem, 50vw, 15rem);
-  font-weight: 700;
-  font-variation-settings: "opsz" 96;
+  font-weight: 400;
+  
 }
 .cover__o {
   position: relative;
@@ -65,7 +66,7 @@ main section {
   left: 0;
   right: 0;
   bottom: 0;
-  top: calc(var(--mast-h) + clamp(10.5rem, 53vw, 15rem));
+  top: calc(var(--mast-h) + clamp(11.5rem, 58vw, 16rem));
 }
 .cover__photo img {
   width: 100%;
@@ -104,7 +105,7 @@ main section {
 .cover__lines span {
   display: block;
   font-family: var(--sans);
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
   letter-spacing: 0.18em;
@@ -127,7 +128,7 @@ main section {
   width: 5.75rem;
   padding: 0.45rem 0.5rem 0.35rem;
   background: var(--paper);
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   line-height: 1.2;
   text-align: center;
 }
@@ -195,8 +196,10 @@ main section {
   }
   .cover__tag {
     grid-column: 1 / -1;
+    max-width: none;
     padding-top: 1rem;
     margin-bottom: 1.5rem;
+    font-size: 1.35rem;
   }
   .cover__mast {
     grid-column: 1 / -1;
@@ -246,15 +249,14 @@ main section {
     top: calc(var(--mast-h) + 1rem);
   }
   .glyph--cover {
-    left: 38%;
-    right: auto;
-    top: 52%;
-    width: 9vw;
-    height: 26vh;
+    right: 4%;
+    top: 50%;
+    width: 8vw;
+    height: 24vh;
   }
 }
 
-/* ---------- 02 Sommario ---------- */
+/* ---------- Servizi in breve ---------- */
 
 .contents {
   padding: 5rem var(--gutter) 4rem;
@@ -267,16 +269,14 @@ main section {
   margin: 0 auto;
 }
 .contents__title {
-  margin-bottom: 2.5rem;
-  font-size: clamp(3.25rem, 15vw, 8rem);
+  margin-bottom: 0.75rem;
+  font-size: clamp(2.6rem, 11vw, 5.5rem);
   font-weight: 400;
 }
 .contents__title em,
 .color__title em,
 .cut__title em,
-.quiet__line em,
 .ceremony__title em,
-.prices__title em,
 .salon__title em,
 .letters__title em,
 .back__title em {
@@ -287,12 +287,25 @@ main section {
 .on-dark .back__title em {
   color: var(--copper-light);
 }
+.contents__inner > div:first-child {
+  margin-bottom: 2rem;
+}
 .contents__list {
   border-top: 1px solid var(--ink);
 }
+.contents__price {
+  grid-column: 3;
+  grid-row: 1;
+  align-self: baseline;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.contents__desc {
+  grid-column: 2 / 4;
+}
 .contents__list a {
   display: grid;
-  grid-template-columns: 3.25rem 1fr;
+  grid-template-columns: 2.5rem 1fr auto;
   column-gap: 0.75rem;
   padding: 1rem 0;
   border-bottom: 1px solid var(--rule);
@@ -305,10 +318,10 @@ main section {
   color: var(--copper);
 }
 .contents__num {
-  grid-row: span 2;
+  grid-row: 1 / 3;
   font-family: var(--serif);
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1;
   color: var(--copper);
 }
@@ -338,16 +351,15 @@ main section {
     gap: 4rem;
   }
   .contents__list a {
-    grid-template-columns: 6rem 1fr auto;
+    grid-template-columns: 4.5rem 1fr auto;
     align-items: baseline;
     padding: 1.4rem 0;
   }
   .contents__num {
-    grid-row: auto;
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
   .contents__name {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   .glyph--contents {
     left: 24%;
@@ -397,7 +409,7 @@ main section {
 .color__lead {
   max-width: 34rem;
   font-size: 1.15rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.55;
   margin-bottom: 1.75rem;
 }
@@ -508,7 +520,7 @@ main section {
   margin-bottom: 0.5rem;
 }
 .fan__meta dt {
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -626,16 +638,6 @@ figcaption {
   line-height: 1.15;
   margin-bottom: 0.4rem;
 }
-.qa__q::before {
-  content: "D. ";
-  font-family: var(--sans);
-  font-size: 0.8rem;
-  font-style: normal;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  color: var(--copper);
-  vertical-align: 0.3em;
-}
 .qa__a {
   max-width: 36rem;
 }
@@ -685,62 +687,36 @@ figcaption {
   }
 }
 
-/* ---------- 08 Pagina quasi vuota ---------- */
-
-.quiet {
-  min-height: 92svh;
-  display: grid;
-  align-content: center;
-  gap: 2.5rem;
-  padding: 5rem var(--gutter);
-}
-.quiet__line {
-  position: relative;
-  z-index: 2;
-  font-size: clamp(3.4rem, 17vw, 11rem);
-  font-weight: 400;
-  line-height: 0.92;
-}
-.quiet__scissors {
-  width: 58%;
-  justify-self: end;
-}
-.quiet__scissors img {
-  width: 100%;
-  aspect-ratio: 3 / 2;
-  object-fit: cover;
-}
-.glyph--quiet {
+.glyph--cut {
   right: 3%;
-  top: 3rem;
-  width: 22vw;
+  top: 23rem;
+  width: 16vw;
   height: 9rem;
 }
-
 @media (min-width: 64em) {
-  .quiet {
-    grid-template-columns: 2fr 1fr;
-    align-items: end;
-    min-height: 100svh;
-  }
-  .quiet__scissors {
-    width: 100%;
-  }
-  .glyph--quiet {
-    left: 55%;
-    right: auto;
-    top: 14%;
-    width: 10rem;
-    height: 12rem;
+  .glyph--cut {
+    right: 3%;
+    top: 55%;
+    width: 7rem;
+    height: 10rem;
   }
 }
 
-/* ---------- 10 Cerimonie ---------- */
+/* ---------- Cerimonie ---------- */
 
 .ceremony {
   background: var(--night);
   color: var(--ivory);
   overflow: hidden;
+}
+.ceremony__photo {
+  position: relative;
+}
+.ceremony__photo::after {
+  content: "";
+  position: absolute;
+  inset: 45% 0 0;
+  background: linear-gradient(180deg, rgba(27, 23, 20, 0), rgba(27, 23, 20, 0.92) 85%);
 }
 .ceremony__photo img {
   width: 100%;
@@ -754,14 +730,14 @@ figcaption {
   padding: 0 var(--gutter) 5rem;
 }
 .ceremony__title {
-  font-size: clamp(4rem, 20vw, 10rem);
+  font-size: clamp(3rem, 14vw, 8rem);
   font-weight: 400;
   margin-bottom: 1.25rem;
 }
 .ceremony__lead {
   max-width: 30rem;
   font-size: 1.15rem;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 2rem;
 }
 .timeline {
@@ -796,9 +772,9 @@ figcaption {
 }
 .glyph--ceremony {
   right: 4%;
-  top: 40%;
+  top: 5rem;
   width: 18vw;
-  height: 14rem;
+  height: 12rem;
 }
 
 @media (min-width: 64em) {
@@ -810,6 +786,10 @@ figcaption {
   .ceremony__photo img {
     height: 100%;
     aspect-ratio: auto;
+  }
+  .ceremony__photo::after {
+    inset: 0 0 0 40%;
+    background: linear-gradient(90deg, rgba(27, 23, 20, 0), rgba(27, 23, 20, 0.92));
   }
   .ceremony__body {
     margin: 0 0 0 -9rem;
@@ -824,81 +804,7 @@ figcaption {
     margin-left: 9rem;
   }
   .glyph--ceremony {
-    right: 3%;
-    top: 12%;
-    width: 7rem;
-    height: 16rem;
-  }
-}
-
-/* ---------- 12 Prezzi in breve ---------- */
-
-.prices {
-  display: grid;
-  gap: 2.5rem;
-  padding: 5rem var(--gutter);
-}
-.prices__title {
-  font-size: clamp(3.4rem, 16vw, 8rem);
-  font-weight: 400;
-  margin-bottom: 0.75rem;
-}
-.prices .note {
-  margin-bottom: 1.5rem;
-}
-.pricelist {
-  margin-bottom: 2rem;
-  border-top: 1px solid var(--ink);
-}
-.pricelist li {
-  display: flex;
-  align-items: baseline;
-  gap: 0.5rem;
-  padding: 0.85rem 0;
-  border-bottom: 1px solid var(--rule);
-}
-.pricelist__name {
-  font-family: var(--serif);
-  font-size: 1.3rem;
-  line-height: 1.2;
-}
-.pricelist__dots {
-  flex: 1;
-  min-width: 1rem;
-  border-bottom: 1px dotted var(--ink-soft);
-  transform: translateY(-0.3em);
-}
-.pricelist__price {
-  font-weight: 500;
-  white-space: nowrap;
-}
-.prices__photo {
-  width: 70%;
-}
-.prices__photo img {
-  width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
-}
-.prices__photo figcaption {
-  padding-left: 0;
-}
-
-@media (min-width: 64em) {
-  .prices {
-    grid-template-columns: 1fr 1.3fr;
-    align-items: center;
-    gap: 6rem;
-    padding: 8rem var(--gutter);
-  }
-  .prices__inner {
-    grid-column: 2;
-    max-width: 38rem;
-  }
-  .prices__photo {
-    grid-column: 1;
-    grid-row: 1;
-    width: 100%;
+    display: none;
   }
 }
 
@@ -1073,20 +979,25 @@ figcaption {
   margin-bottom: 0.75rem;
 }
 .back__title {
-  font-size: clamp(3.6rem, 17vw, 10rem);
+  font-size: clamp(3.4rem, 15vw, 8rem);
   font-weight: 400;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0;
 }
 .glyph--back {
   position: relative;
   width: min(80%, 26rem);
   height: 2.5rem;
-  margin: -0.5rem 0 1rem;
+  margin: 2.5rem 0 1rem;
+}
+@media (min-width: 48em) {
+  .glyph--back {
+    margin-top: 4.5rem;
+  }
 }
 .back__lead {
   max-width: 28rem;
   font-size: 1.15rem;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 1.75rem;
 }
 
@@ -1104,5 +1015,33 @@ figcaption {
     grid-area: 1 / 1 / 2 / 3;
     align-self: center;
     padding: 6rem var(--gutter);
+  }
+}
+
+/* Su telefono il filo passa solo sopra le foto e negli spazi vuoti, mai sul testo */
+@media (max-width: 63.99em) {
+  .glyph--contents,
+  .glyph--color,
+  .glyph--salon {
+    display: none;
+  }
+}
+.salon__address .note {
+  font-family: var(--sans);
+}
+.back__photo {
+  position: relative;
+}
+.back__photo::after {
+  content: "";
+  position: absolute;
+  inset: 35% 0 0;
+  background: linear-gradient(180deg, rgba(27, 23, 20, 0), rgba(27, 23, 20, 0.95) 70%);
+}
+@media (min-width: 64em) {
+  .back__photo::after {
+    inset: 0 auto 0 0;
+    width: 40%;
+    background: linear-gradient(90deg, rgba(27, 23, 20, 0.9), rgba(27, 23, 20, 0));
   }
 }

@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Prenota — Atelier Filo (sito dimostrativo)</title>
+  <meta name="description" content="Prenota da Atelier Filo in tre passi: servizio, giorno e ora. Il riepilogo si apre in WhatsApp. Sito dimostrativo di Mockly.">
+  <meta name="theme-color" content="#f4efe6">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="Atelier Filo (demo Mockly)">
+  <meta property="og:title" content="Prenota — Atelier Filo (sito dimostrativo)">
+  <meta property="og:description" content="Prenota da Atelier Filo in tre passi: servizio, giorno e ora. Il riepilogo si apre in WhatsApp. Sito dimostrativo di Mockly.">
+  <meta property="og:image" content="https://mockly-website.github.io/Atelier-Filo/assets/img/anteprima-social.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Atelier Filo, parrucchiere: la scritta del salone accanto a una treccia ramata">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="assets/fonts/dm-serif-display-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css?v=14">
+  <link rel="stylesheet" href="assets/css/pages.css?v=14">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body class="page-book">
+  <a class="skip" href="#contenuto">Vai al contenuto</a>
+
+  <header class="mast" data-mast>
+    <a class="mast__name" href="index.html" aria-label="Atelier Filo, vai alla home">Atelier <span>Filo</span></a>
+    <nav class="mast__nav" aria-label="Principale">
+      <a href="servizi.html">Servizi e prezzi</a>
+      <a href="index.html#colore">Colore</a>
+      <a href="index.html#orari">Orari e indirizzo</a>
+    </nav>
+    <a class="btn btn--copper mast__book" href="prenota.html" aria-current="page">Prenota</a>
+    <button class="mast__menu" type="button" aria-expanded="false" aria-controls="menu" data-menu-open>
+      Menu <span class="mast__menu-lines" aria-hidden="true"></span>
+    </button>
+  </header>
+
+  <div class="index" id="menu" role="dialog" aria-modal="true" aria-label="Menu" data-menu>
+    <div class="index__veil" data-menu-close></div>
+    <div class="index__sheet">
+      <div class="index__top">
+        <span class="kicker">Menu</span>
+        <button class="index__close" type="button" aria-label="Chiudi il menu" data-menu-close>&times;</button>
+      </div>
+      <ol class="index__list">
+        <li><a href="index.html"><span class="index__num">01</span><span class="index__label">Home</span></a></li>
+        <li><a href="servizi.html"><span class="index__num">02</span><span class="index__label">Servizi e prezzi</span></a></li>
+        <li><a href="index.html#colore"><span class="index__num">03</span><span class="index__label">Colore</span></a></li>
+        <li><a href="index.html#cerimonie"><span class="index__num">04</span><span class="index__label">Cerimonie</span></a></li>
+        <li><a href="index.html#orari"><span class="index__num">05</span><span class="index__label">Orari e indirizzo</span></a></li>
+        <li><a href="prenota.html" aria-current="page"><span class="index__num">06</span><span class="index__label">Prenota</span></a></li>
+      </ol>
+      <div class="index__foot">
+        <a class="btn btn--copper" href="prenota.html">Prenota un appuntamento <span class="btn__arrow" aria-hidden="true">→</span></a>
+        <p>Martedì–venerdì 9–19, sabato 8:30–18 (orari di esempio).</p>
+      </div>
+    </div>
+  </div>
+
+  <main id="contenuto">
+    <section class="list-head list-head--book">
+      <p class="folio" aria-hidden="true"><b>06</b> Prenota</p>
+      <h1 class="list-head__title">Prenota <em>in tre passi</em></h1>
+      <p class="list-head__lead">Servizio, giorno, ora. Alla fine si apre WhatsApp con il messaggio già scritto.</p>
+      <p class="demo-flag">Questa è una dimostrazione: il messaggio arriva a Mockly, non a un salone. Giorni e orari liberi sono di esempio.</p>
+    </section>
+
+    <form class="book" novalidate data-book>
+      <fieldset class="step" data-step="1">
+        <legend class="step__title"><span class="step__num">1</span> Che cosa ti facciamo?</legend>
+        <p class="step__hint">Puoi sceglierne più di uno, per esempio taglio e colore.</p>
+        <div class="pick-groups">
+          <div class="pick-group">
+            <p class="pick-group__title">Donna</p>
+            <label class="pick">
+              <input type="checkbox" name="servizio" value="piega-corti">
+              <span class="pick__box" aria-hidden="true"></span>
+              <span class="pick__name">Piega capelli corti</span>
+              <span class="pick__meta">20 € · 30 min</span>
+            </label>
+            <label class="pick">
+              <input type="checkbox" name="servizio" value="piega-lunghi">
+              <span class="pick__box" aria-hidden="true"></span>
+              <span class="pick__name">Piega capelli lunghi</span>
+              <span class="pick__meta">26 € · 45 min</span>
+            </label>
+            <label class="pick">
+              <input type="checkbox" name="servizio" value="taglio-donna">
+              <span class="pick__box" aria-hidden="true"></span>
+              <span class="pick__name">Taglio e piega</span>
+              <span class="pick__meta">45 € · 1 h</span>
+            </label>
+            <label class="pick">
+              <input type="checkbox" name="servizio" value="taglio-ricci">
+              <span class="pick__box" aria-hidden="true"></span>
+              <span class="pick__name">Taglio ricci a secco</span>
+              <span class="pick__meta">55 € · 1 h 15 min</span>
+            </label>
+            <label class="pick">
+              <input type="checkbox" name="servizio" value="onde">
+              <span class="pick__box" aria-hidden="true"></span>
+              <span class="pick__name">Onde con il ferro</span>
+              <span class="pick__meta">32 € · 45 min</span>
+            </label>
+            <label class="pick">
+              <input type="checkbox" name="servizio" value="ricostruzione">
+              <span class="pick__box" aria-hidden="true"></span>
+              <span class="pick__name">Trattamento ricostruzione</span>
+              <span class="pick__meta">22 € · 20 min</span>
+            </label>
+            <label class="pick">
+              <input type="checkbox" name="servizio" value="prova-raccolto">
+              <span class="pick__box" aria-hidden="true"></span>
+              <span class="pick__name">Prova acconciatura</span>
+              <span class="pick__meta">40 € · 1 h</span>
+            </label>
+            <label class="pick">
+              <input type="checkbox" name="servizio" value="raccolto">
+              <span class="pick__box" aria-hidden="true"></span>
+              <span class="pick__name">Raccolto da cerimonia</span>
+              <span class="pick__meta">65 € · 1 h 15 min</span>
+            </label>
+          </div>
+          <div class="pick-group">
+            <p class="pick-group__title">Uomo</p>
+            <label class="pick">
+              <input type="checkbox" name="servizio" value="taglio-uomo">
+              <span class="pick__box" aria-hidden="true"></span>
+              <span class="pick__name">Taglio uomo</span>
+              <span class="pick__meta">20 € · 30 min</span>
+            </label>
+            <label class="pick">
+              <input type="checkbox" name="servizio" value="taglio-barba">
+              <span class="pick__box" aria-hidden="true"></span>
+              <span class="pick__name">Taglio e barba</span>
+              <span class="pick__meta">28 € · 45 min</span>
+            </label>
+            <label class="pick">
+              <input type="checkbox" name="servizio" value="bambino">
+              <span class="pick__box" aria-hidden="true"></span>
+              <span class="pick__name">Taglio bambino</span>
+              <span class="pick__meta">14 € · 20 min</span>
+            </label>
+          </div>
+          <div class="pick-group">
+            <p class="pick-group__title">Colore</p>
+            <label class="pick">
+              <input type="checkbox" name="servizio" value="test">
+              <span class="pick__box" aria-hidden="true"></span>
+              <span class="pick__name">Test di sensibilità</span>
+              <span class="pick__meta">Gratuito · 10 min</span>
+            </label>
+            <label class="pick">
+              <input type="checkbox" name="servizio" value="ricrescita">
+              <span class="pick__box" aria-hidden="true"></span>
+              <span class="pick__name">Ritocco ricrescita</span>
+              <span class="pick__meta">38 € · 1 h</span>
+            </label>
+            <label class="pick">
+              <input type="checkbox" name="servizio" value="colore">
+              <span class="pick__box" aria-hidden="true"></span>
+              <span class="pick__name">Colore completo</span>
+              <span class="pick__meta">55 € · 1 h 30 min</span>
+            </label>
+            <label class="pick">
+              <input type="checkbox" name="servizio" value="tonalizzante">
+              <span class="pick__box" aria-hidden="true"></span>
+              <span class="pick__name">Tonalizzante</span>
+              <span class="pick__meta">25 € · 30 min</span>
+            </label>
+            <label class="pick">
+              <input type="checkbox" name="servizio" value="meches">
+              <span class="pick__box" aria-hidden="true"></span>
+              <span class="pick__name">Schiariture con stagnole</span>
+              <span class="pick__meta">da 80 € · 2 h</span>
+            </label>
+            <label class="pick">
+              <input type="checkbox" name="servizio" value="balayage">
+              <span class="pick__box" aria-hidden="true"></span>
+              <span class="pick__name">Balayage</span>
+              <span class="pick__meta">da 110 € · 3 h</span>
+            </label>
+          </div>
+        </div>
+        <label class="first-time">
+          <input type="checkbox" name="prima" data-first>
+          <span class="pick__box" aria-hidden="true"></span>
+          È la prima volta che vengo da voi
+        </label>
+        <p class="step__info" hidden data-test-note>Per il primo colore serve il test di sensibilità 48 ore prima: lo facciamo in 10 minuti, gratis. Per questo i prossimi due giorni non si possono scegliere.</p>
+        <p class="step__error" hidden data-error="1">Scegli almeno un servizio.</p>
+      </fieldset>
+
+      <fieldset class="step" data-step="2">
+        <legend class="step__title"><span class="step__num">2</span> Che giorno?</legend>
+        <div class="days" data-days role="radiogroup" aria-label="Giorno">
+          <p class="step__empty">Prima scegli un servizio.</p>
+        </div>
+        <p class="step__error" hidden data-error="2">Scegli un giorno.</p>
+      </fieldset>
+
+      <fieldset class="step" data-step="3">
+        <legend class="step__title"><span class="step__num">3</span> A che ora?</legend>
+        <div class="slots" data-slots role="radiogroup" aria-label="Ora">
+          <p class="step__empty">Prima scegli il giorno.</p>
+        </div>
+        <p class="step__error" hidden data-error="3">Scegli un orario.</p>
+      </fieldset>
+
+      <fieldset class="step step--last" data-step="4">
+        <legend class="step__title">Come ti chiami?</legend>
+        <label class="field">
+          <span class="field__label">Nome</span>
+          <input class="field__input" type="text" name="nome" autocomplete="given-name" required minlength="2" maxlength="40" data-name>
+        </label>
+        <p class="step__error" hidden data-error="4">Scrivi il tuo nome, così sappiamo chi aspettare.</p>
+        <label class="field">
+          <span class="field__label">Note (facoltativo)</span>
+          <textarea class="field__input" name="note" rows="3" maxlength="300" placeholder="Per esempio: capelli molto lunghi, porto una foto" data-note></textarea>
+        </label>
+
+        <div class="summary" data-summary>
+          <p class="summary__title">Il tuo appuntamento</p>
+          <dl class="summary__list">
+            <div><dt>Servizi</dt><dd data-sum="services">—</dd></div>
+            <div><dt>Giorno</dt><dd data-sum="day">—</dd></div>
+            <div><dt>Ora</dt><dd data-sum="time">—</dd></div>
+            <div><dt>Durata</dt><dd data-sum="dur">—</dd></div>
+            <div><dt>Totale indicativo</dt><dd data-sum="total">—</dd></div>
+          </dl>
+        </div>
+        <button class="btn btn--copper book__send" type="submit" data-send>Invia la richiesta su WhatsApp</button>
+        <p class="book__alert" role="alert" data-alert></p>
+      </fieldset>
+
+      <div class="book__done" hidden data-done tabindex="-1">
+        <p class="book__done-title">Messaggio pronto in WhatsApp.</p>
+        <p>Il salone risponde e conferma l'orario. In questa demo il messaggio arriva a Mockly.</p>
+        <p><a class="text-link" href="https://wa.me/393517578080" data-wa-link target="_blank" rel="noopener">Se WhatsApp non si è aperto, tocca qui</a></p>
+        <button class="btn btn--ghost" type="button" data-again>Prenota un altro appuntamento</button>
+      </div>
+    </form>
+
+    <div class="book-bar" data-bar>
+      <p class="book-bar__sum" data-bar-sum>Nessun servizio scelto</p>
+      <button class="btn btn--copper" type="button" data-bar-next>Scegli il servizio</button>
+    </div>
+  </main>
+
+  <footer class="colophon on-dark">
+    <div class="colophon__grid">
+      <div>
+        <p class="colophon__name">Atelier <span>Filo</span></p>
+        <p>Parrucchiere per donna e uomo.</p>
+      </div>
+      <div>
+        <h2>Pagine</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="servizi.html">Servizi e prezzi</a></li>
+          <li><a href="prenota.html">Prenota</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Orari di esempio</h2>
+        <dl class="colophon__hours">
+          <dt>Mar – ven</dt><dd>9:00 – 19:00</dd>
+          <dt>Sabato</dt><dd>8:30 – 18:00</dd>
+          <dt>Dom, lun</dt><dd>Chiuso</dd>
+        </dl>
+      </div>
+      <div>
+        <h2>Dove</h2>
+        <p>Via dell'Esempio 1</p>
+        <p><a href="CREDITI.md">Crediti delle foto</a></p>
+      </div>
+    </div>
+    <div class="demo-note">
+      <p>Sito dimostrativo realizzato da Mockly. L'attività è inventata.</p>
+      <p>Vuoi un sito così per il tuo lavoro? <a href="https://wa.me/393517578080?text=Ciao%20Mockly%2C%20ho%20visto%20la%20demo%20Atelier%20Filo%20e%20vorrei%20un%20sito%20cos%C3%AC%20per%20il%20mio%20lavoro." target="_blank" rel="noopener">Scrivici su WhatsApp</a></p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js?v=14"></script>
+  <script src="assets/js/servizi-dati.js?v=14"></script>
+  <script src="assets/js/prenota.js?v=14"></script>
+</body>
+</html>

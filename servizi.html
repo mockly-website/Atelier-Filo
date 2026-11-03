@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Servizi e prezzi — Atelier Filo (sito dimostrativo)</title>
+  <meta name="description" content="Il listino di Atelier Filo: taglio donna e uomo, piega, colore, balayage e raccolti, con prezzi e durate di esempio. Sito dimostrativo di Mockly.">
+  <meta name="theme-color" content="#f4efe6">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="Atelier Filo (demo Mockly)">
+  <meta property="og:title" content="Servizi e prezzi — Atelier Filo (sito dimostrativo)">
+  <meta property="og:description" content="Il listino di Atelier Filo: taglio donna e uomo, piega, colore, balayage e raccolti, con prezzi e durate di esempio. Sito dimostrativo di Mockly.">
+  <meta property="og:image" content="https://mockly-website.github.io/Atelier-Filo/assets/img/anteprima-social.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Atelier Filo, parrucchiere: la scritta del salone accanto a una treccia ramata">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="assets/fonts/dm-serif-display-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css?v=14">
+  <link rel="stylesheet" href="assets/css/pages.css?v=14">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body class="page-list has-dock">
+  <a class="skip" href="#contenuto">Vai al contenuto</a>
+
+  <header class="mast" data-mast>
+    <a class="mast__name" href="index.html" aria-label="Atelier Filo, vai alla home">Atelier <span>Filo</span></a>
+    <nav class="mast__nav" aria-label="Principale">
+      <a href="servizi.html" aria-current="page">Servizi e prezzi</a>
+      <a href="index.html#colore">Colore</a>
+      <a href="index.html#orari">Orari e indirizzo</a>
+    </nav>
+    <a class="btn btn--copper mast__book" href="prenota.html">Prenota</a>
+    <button class="mast__menu" type="button" aria-expanded="false" aria-controls="menu" data-menu-open>
+      Menu <span class="mast__menu-lines" aria-hidden="true"></span>
+    </button>
+  </header>
+
+  <div class="index" id="menu" role="dialog" aria-modal="true" aria-label="Menu" data-menu>
+    <div class="index__veil" data-menu-close></div>
+    <div class="index__sheet">
+      <div class="index__top">
+        <span class="kicker">Menu</span>
+        <button class="index__close" type="button" aria-label="Chiudi il menu" data-menu-close>&times;</button>
+      </div>
+      <ol class="index__list">
+        <li><a href="index.html"><span class="index__num">01</span><span class="index__label">Home</span></a></li>
+        <li><a href="servizi.html" aria-current="page"><span class="index__num">02</span><span class="index__label">Servizi e prezzi</span></a></li>
+        <li><a href="index.html#colore"><span class="index__num">03</span><span class="index__label">Colore</span></a></li>
+        <li><a href="index.html#cerimonie"><span class="index__num">04</span><span class="index__label">Cerimonie</span></a></li>
+        <li><a href="index.html#orari"><span class="index__num">05</span><span class="index__label">Orari e indirizzo</span></a></li>
+        <li><a href="prenota.html"><span class="index__num">06</span><span class="index__label">Prenota</span></a></li>
+      </ol>
+      <div class="index__foot">
+        <a class="btn btn--copper" href="prenota.html">Prenota un appuntamento <span class="btn__arrow" aria-hidden="true">→</span></a>
+        <p>Martedì–venerdì 9–19, sabato 8:30–18 (orari di esempio).</p>
+      </div>
+    </div>
+  </div>
+
+  <main id="contenuto">
+    <section class="list-head">
+      <p class="folio" aria-hidden="true"><b>02</b> Listino</p>
+      <h1 class="list-head__title">Servizi <em>e prezzi</em></h1>
+      <p class="list-head__lead">Prezzi e durate di esempio. Il prezzo del colore dipende dalla lunghezza: te lo diciamo prima di cominciare.</p>
+    </section>
+
+    <section class="list" aria-label="Listino">
+      <div class="list__bar">
+        <div class="chips" role="group" aria-label="Filtra il listino" data-filters>
+          <button class="chip" type="button" aria-pressed="true" data-filter="tutti">Tutti <span data-count="tutti"></span></button>
+          <button class="chip" type="button" aria-pressed="false" data-filter="donna">Donna <span data-count="donna"></span></button>
+          <button class="chip" type="button" aria-pressed="false" data-filter="uomo">Uomo <span data-count="uomo"></span></button>
+          <button class="chip" type="button" aria-pressed="false" data-filter="colore">Colore <span data-count="colore"></span></button>
+        </div>
+      </div>
+      <div class="list__body">
+        <figure class="list__photo" aria-hidden="true">
+          <img data-photo="tutti" src="assets/img/piega-800.webp" srcset="assets/img/piega-480.webp 480w, assets/img/piega-800.webp 800w, assets/img/piega-1200.webp 1200w" sizes="34vw" width="1600" height="2040" loading="lazy" alt="">
+          <img data-photo="uomo" src="assets/img/uomo-800.webp" srcset="assets/img/uomo-480.webp 480w, assets/img/uomo-800.webp 800w" sizes="34vw" width="1200" height="1251" loading="lazy" alt="">
+          <img data-photo="colore" src="assets/img/ricci-800.webp" srcset="assets/img/ricci-480.webp 480w, assets/img/ricci-800.webp 800w, assets/img/ricci-1200.webp 1200w" sizes="34vw" width="1600" height="1800" loading="lazy" alt="">
+        </figure>
+        <div>
+          <p class="list__status" aria-live="polite" data-status></p>
+          <ul class="svcs" data-list>
+        <li class="svc" data-cat="donna">
+          <div class="svc__main">
+            <p class="svc__cat">Donna</p>
+            <h3 class="svc__name">Piega capelli corti</h3>
+            <p class="svc__desc">Lavaggio e piega a spazzola o a mano libera.</p>
+          </div>
+          <p class="svc__meta"><span class="svc__price">20 €</span><span class="svc__time">30 min</span></p>
+          <a class="svc__book" href="prenota.html?servizio=piega-corti" aria-label="Prenota: Piega capelli corti">Prenota</a>
+        </li>
+        <li class="svc" data-cat="donna">
+          <div class="svc__main">
+            <p class="svc__cat">Donna</p>
+            <h3 class="svc__name">Piega capelli lunghi</h3>
+            <p class="svc__desc">Lavaggio e piega, liscia o mossa, con la spazzola tonda.</p>
+          </div>
+          <p class="svc__meta"><span class="svc__price">26 €</span><span class="svc__time">45 min</span></p>
+          <a class="svc__book" href="prenota.html?servizio=piega-lunghi" aria-label="Prenota: Piega capelli lunghi">Prenota</a>
+        </li>
+        <li class="svc" data-cat="donna">
+          <div class="svc__main">
+            <p class="svc__cat">Donna</p>
+            <h3 class="svc__name">Taglio e piega</h3>
+            <p class="svc__desc">Prima parliamo davanti allo specchio, poi taglio, lavaggio e piega.</p>
+          </div>
+          <p class="svc__meta"><span class="svc__price">45 €</span><span class="svc__time">1 h</span></p>
+          <a class="svc__book" href="prenota.html?servizio=taglio-donna" aria-label="Prenota: Taglio e piega">Prenota</a>
+        </li>
+        <li class="svc" data-cat="donna">
+          <div class="svc__main">
+            <p class="svc__cat">Donna</p>
+            <h3 class="svc__name">Taglio ricci a secco</h3>
+            <p class="svc__desc">Si taglia sul capello asciutto, un riccio alla volta.</p>
+          </div>
+          <p class="svc__meta"><span class="svc__price">55 €</span><span class="svc__time">1 h 15 min</span></p>
+          <a class="svc__book" href="prenota.html?servizio=taglio-ricci" aria-label="Prenota: Taglio ricci a secco">Prenota</a>
+        </li>
+        <li class="svc" data-cat="donna">
+          <div class="svc__main">
+            <p class="svc__cat">Donna</p>
+            <h3 class="svc__name">Onde con il ferro</h3>
+            <p class="svc__desc">Onde morbide che restano fino al lavaggio.</p>
+          </div>
+          <p class="svc__meta"><span class="svc__price">32 €</span><span class="svc__time">45 min</span></p>
+          <a class="svc__book" href="prenota.html?servizio=onde" aria-label="Prenota: Onde con il ferro">Prenota</a>
+        </li>
+        <li class="svc" data-cat="donna">
+          <div class="svc__main">
+            <p class="svc__cat">Donna</p>
+            <h3 class="svc__name">Trattamento ricostruzione</h3>
+            <p class="svc__desc">Per capelli sfibrati da decolorazioni o piastra. Si aggiunge a un altro servizio.</p>
+          </div>
+          <p class="svc__meta"><span class="svc__price">22 €</span><span class="svc__time">20 min</span></p>
+          <a class="svc__book" href="prenota.html?servizio=ricostruzione" aria-label="Prenota: Trattamento ricostruzione">Prenota</a>
+        </li>
+        <li class="svc" data-cat="donna">
+          <div class="svc__main">
+            <p class="svc__cat">Donna</p>
+            <h3 class="svc__name">Prova acconciatura</h3>
+            <p class="svc__desc">Da due a quattro settimane prima della cerimonia, con i tuoi accessori.</p>
+          </div>
+          <p class="svc__meta"><span class="svc__price">40 €</span><span class="svc__time">1 h</span></p>
+          <a class="svc__book" href="prenota.html?servizio=prova-raccolto" aria-label="Prenota: Prova acconciatura">Prenota</a>
+        </li>
+        <li class="svc" data-cat="donna">
+          <div class="svc__main">
+            <p class="svc__cat">Donna</p>
+            <h3 class="svc__name">Raccolto da cerimonia</h3>
+            <p class="svc__desc">Chignon o semiraccolto per sposa, testimone o invitata.</p>
+          </div>
+          <p class="svc__meta"><span class="svc__price">65 €</span><span class="svc__time">1 h 15 min</span></p>
+          <a class="svc__book" href="prenota.html?servizio=raccolto" aria-label="Prenota: Raccolto da cerimonia">Prenota</a>
+        </li>
+        <li class="svc" data-cat="uomo">
+          <div class="svc__main">
+            <p class="svc__cat">Uomo</p>
+            <h3 class="svc__name">Taglio uomo</h3>
+            <p class="svc__desc">Forbici e macchinetta, lavaggio compreso.</p>
+          </div>
+          <p class="svc__meta"><span class="svc__price">20 €</span><span class="svc__time">30 min</span></p>
+          <a class="svc__book" href="prenota.html?servizio=taglio-uomo" aria-label="Prenota: Taglio uomo">Prenota</a>
+        </li>
+        <li class="svc" data-cat="uomo">
+          <div class="svc__main">
+            <p class="svc__cat">Uomo</p>
+            <h3 class="svc__name">Taglio e barba</h3>
+            <p class="svc__desc">Taglio e regolazione della barba, con rifinitura.</p>
+          </div>
+          <p class="svc__meta"><span class="svc__price">28 €</span><span class="svc__time">45 min</span></p>
+          <a class="svc__book" href="prenota.html?servizio=taglio-barba" aria-label="Prenota: Taglio e barba">Prenota</a>
+        </li>
+        <li class="svc" data-cat="uomo">
+          <div class="svc__main">
+            <p class="svc__cat">Uomo</p>
+            <h3 class="svc__name">Taglio bambino</h3>
+            <p class="svc__desc">Fino a 10 anni.</p>
+          </div>
+          <p class="svc__meta"><span class="svc__price">14 €</span><span class="svc__time">20 min</span></p>
+          <a class="svc__book" href="prenota.html?servizio=bambino" aria-label="Prenota: Taglio bambino">Prenota</a>
+        </li>
+        <li class="svc" data-cat="colore">
+          <div class="svc__main">
+            <p class="svc__cat">Colore</p>
+            <h3 class="svc__name">Test di sensibilità</h3>
+            <p class="svc__desc">Serve 48 ore prima del primo colore da noi. Gratuito.</p>
+          </div>
+          <p class="svc__meta"><span class="svc__price">Gratuito</span><span class="svc__time">10 min</span></p>
+          <a class="svc__book" href="prenota.html?servizio=test" aria-label="Prenota: Test di sensibilità">Prenota</a>
+        </li>
+        <li class="svc" data-cat="colore">
+          <div class="svc__main">
+            <p class="svc__cat">Colore</p>
+            <h3 class="svc__name">Ritocco ricrescita</h3>
+            <p class="svc__desc">Colore sui 2–3 cm di radice. Piega esclusa.</p>
+          </div>
+          <p class="svc__meta"><span class="svc__price">38 €</span><span class="svc__time">1 h</span></p>
+          <a class="svc__book" href="prenota.html?servizio=ricrescita" aria-label="Prenota: Ritocco ricrescita">Prenota</a>
+        </li>
+        <li class="svc" data-cat="colore">
+          <div class="svc__main">
+            <p class="svc__cat">Colore</p>
+            <h3 class="svc__name">Colore completo</h3>
+            <p class="svc__desc">Dalle radici alle punte, capelli di media lunghezza.</p>
+          </div>
+          <p class="svc__meta"><span class="svc__price">55 €</span><span class="svc__time">1 h 30 min</span></p>
+          <a class="svc__book" href="prenota.html?servizio=colore" aria-label="Prenota: Colore completo">Prenota</a>
+        </li>
+        <li class="svc" data-cat="colore">
+          <div class="svc__main">
+            <p class="svc__cat">Colore</p>
+            <h3 class="svc__name">Tonalizzante</h3>
+            <p class="svc__desc">Riporta il riflesso fra un colore e l'altro.</p>
+          </div>
+          <p class="svc__meta"><span class="svc__price">25 €</span><span class="svc__time">30 min</span></p>
+          <a class="svc__book" href="prenota.html?servizio=tonalizzante" aria-label="Prenota: Tonalizzante">Prenota</a>
+        </li>
+        <li class="svc" data-cat="colore">
+          <div class="svc__main">
+            <p class="svc__cat">Colore</p>
+            <h3 class="svc__name">Schiariture con stagnole</h3>
+            <p class="svc__desc">Ciocche più chiare, dalla radice o da metà lunghezza.</p>
+          </div>
+          <p class="svc__meta"><span class="svc__price">da 80 €</span><span class="svc__time">2 h</span></p>
+          <a class="svc__book" href="prenota.html?servizio=meches" aria-label="Prenota: Schiariture con stagnole">Prenota</a>
+        </li>
+        <li class="svc" data-cat="colore">
+          <div class="svc__main">
+            <p class="svc__cat">Colore</p>
+            <h3 class="svc__name">Balayage</h3>
+            <p class="svc__desc">Schiaritura a mano libera, sfumata, senza ricrescita netta.</p>
+          </div>
+          <p class="svc__meta"><span class="svc__price">da 110 €</span><span class="svc__time">3 h</span></p>
+          <a class="svc__book" href="prenota.html?servizio=balayage" aria-label="Prenota: Balayage">Prenota</a>
+        </li>
+          </ul>
+          <p class="list__empty" hidden data-empty>Nessun servizio in questa sezione. Tocca “Tutti” per vedere il listino intero.</p>
+          <div class="list__notes">
+            <p><strong>Capelli lunghi:</strong> sul colore si aggiungono 10 € (esempio).</p>
+            <p><strong>Primo colore da noi:</strong> prima facciamo il test di sensibilità, 48 ore prima. È gratuito.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="list-end on-dark">
+      <h2 class="list-end__title">Hai scelto? <em>Prenota in un minuto.</em></h2>
+      <a class="btn btn--light" href="prenota.html">Prenota un appuntamento <span class="btn__arrow" aria-hidden="true">→</span></a>
+    </section>
+  </main>
+
+  <footer class="colophon on-dark">
+    <div class="colophon__grid">
+      <div>
+        <p class="colophon__name">Atelier <span>Filo</span></p>
+        <p>Parrucchiere per donna e uomo.</p>
+      </div>
+      <div>
+        <h2>Pagine</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="servizi.html">Servizi e prezzi</a></li>
+          <li><a href="prenota.html">Prenota</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Orari di esempio</h2>
+        <dl class="colophon__hours">
+          <dt>Mar – ven</dt><dd>9:00 – 19:00</dd>
+          <dt>Sabato</dt><dd>8:30 – 18:00</dd>
+          <dt>Dom, lun</dt><dd>Chiuso</dd>
+        </dl>
+      </div>
+      <div>
+        <h2>Dove</h2>
+        <p>Via dell'Esempio 1</p>
+        <p><a href="CREDITI.md">Crediti delle foto</a></p>
+      </div>
+    </div>
+    <div class="demo-note">
+      <p>Sito dimostrativo realizzato da Mockly. L'attività è inventata.</p>
+      <p>Vuoi un sito così per il tuo lavoro? <a href="https://wa.me/393517578080?text=Ciao%20Mockly%2C%20ho%20visto%20la%20demo%20Atelier%20Filo%20e%20vorrei%20un%20sito%20cos%C3%AC%20per%20il%20mio%20lavoro." target="_blank" rel="noopener">Scrivici su WhatsApp</a></p>
+    </div>
+  </footer>
+
+  <nav class="dock" aria-label="Azioni rapide" data-dock>
+    <a class="btn btn--copper" href="prenota.html">Prenota un appuntamento</a>
+    <a class="btn btn--ghost" href="servizi.html">Prezzi</a>
+  </nav>
+
+  <script src="assets/js/main.js?v=14"></script>
+  <script src="assets/js/servizi.js?v=14"></script>
+</body>
+</html>

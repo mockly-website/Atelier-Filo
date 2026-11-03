@@ -2,16 +2,16 @@
    Idea: un numero speciale di una rivista di moda. Ogni sezione è una pagina. */
 
 @font-face {
-  font-family: "Bodoni Moda";
-  src: url("../fonts/bodoni-moda.woff2") format("woff2");
-  font-weight: 400 900;
+  font-family: "DM Serif Display";
+  src: url("../fonts/dm-serif-display-normal.woff2") format("woff2");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Bodoni Moda";
-  src: url("../fonts/bodoni-moda-italic.woff2") format("woff2");
-  font-weight: 400 900;
+  font-family: "DM Serif Display";
+  src: url("../fonts/dm-serif-display-italic.woff2") format("woff2");
+  font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
@@ -34,7 +34,7 @@
   --copper-light: #e48d63;
   --night: #1b1714;
 
-  --serif: "Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
+  --serif: "DM Serif Display", Georgia, serif;
   --sans: "Jost", "Futura", "Avenir Next", system-ui, sans-serif;
 
   --gutter: clamp(1rem, 4.5vw, 3rem);
@@ -65,7 +65,7 @@ body {
   color: var(--ink);
   font-family: var(--sans);
   font-weight: 400;
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
   line-height: 1.6;
   overflow-x: clip;
   -webkit-font-smoothing: antialiased;
@@ -116,8 +116,8 @@ h1,
 h2,
 h3 {
   font-family: var(--serif);
-  font-weight: 500;
-  line-height: 0.95;
+  font-weight: 400;
+  line-height: 1;
   text-wrap: balance;
 }
 
@@ -253,6 +253,7 @@ p {
 
 /* Numero di pagina a lato, come nelle riviste */
 .folio {
+  display: none;
   position: absolute;
   top: 1.25rem;
   left: 0.2rem;
@@ -260,7 +261,7 @@ p {
   z-index: 3;
   writing-mode: vertical-rl;
   font-family: var(--sans);
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: 500;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -271,9 +272,14 @@ p {
 .folio b {
   font-family: var(--serif);
   font-size: 1.15rem;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0;
   color: var(--copper);
+}
+@media (min-width: 64em) {
+  .folio {
+    display: block;
+  }
 }
 .on-dark .folio {
   color: rgba(244, 239, 230, 0.75);
@@ -316,24 +322,12 @@ p {
 }
 .mast__name span {
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
 }
 .mast--cover .mast__name {
   opacity: 0;
   transform: translateY(8px);
   pointer-events: none;
-}
-.mast__issue {
-  display: none;
-  font-size: 0.8125rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
-}
-.mast--cover .mast__issue {
-  display: block;
-  position: absolute;
-  left: var(--gutter);
 }
 .mast__nav {
   display: none;
@@ -495,7 +489,7 @@ p {
 .index__num {
   font-family: var(--serif);
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--copper);
 }
 .index__label {
@@ -635,12 +629,12 @@ body.has-dock {
 }
 .colophon__name span {
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
 }
 .colophon h2 {
   margin-bottom: 0.75rem;
   font-family: var(--sans);
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   font-weight: 500;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -655,6 +649,7 @@ body.has-dock {
   display: inline-flex;
   align-items: center;
   min-height: 2.75rem;
+  min-width: 2.75rem;
   color: var(--ivory);
   text-decoration-color: rgba(244, 239, 230, 0.4);
   text-underline-offset: 0.3em;

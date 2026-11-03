@@ -4,135 +4,131 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Atelier Filo — Parrucchiere per donna e uomo (sito dimostrativo)</title>
-  <meta name="description" content="Atelier Filo, parrucchiere per donna e uomo: taglio, colore, balayage e raccolti da cerimonia. Listino e prenotazione in tre passi. Sito dimostrativo di Mockly: l'attività è inventata.">
+  <meta name="description" content="Atelier Filo, parrucchiere per donna e uomo: taglio, colore, balayage e raccolti da cerimonia. Prezzi e prenotazione in tre passi. Sito dimostrativo di Mockly: l'attività è inventata.">
   <meta name="theme-color" content="#f4efe6">
-  <link rel="canonical" href="https://mockly-website.github.io/Atelier-Filo/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="it_IT">
-  <meta property="og:title" content="Atelier Filo — un salone raccontato come una rivista">
-  <meta property="og:description" content="Sito dimostrativo di Mockly per un parrucchiere: listino filtrabile e prenotazione in tre passi su WhatsApp.">
+  <meta property="og:site_name" content="Atelier Filo (demo Mockly)">
+  <meta property="og:title" content="Atelier Filo — Parrucchiere per donna e uomo (sito dimostrativo)">
+  <meta property="og:description" content="Atelier Filo, parrucchiere per donna e uomo: taglio, colore, balayage e raccolti da cerimonia. Prezzi e prenotazione in tre passi. Sito dimostrativo di Mockly: l'attività è inventata.">
   <meta property="og:image" content="https://mockly-website.github.io/Atelier-Filo/assets/img/anteprima-social.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="La copertina di Atelier Filo: la scritta del salone sopra una treccia ramata">
+  <meta property="og:image:alt" content="Atelier Filo, parrucchiere: la scritta del salone accanto a una treccia ramata">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="preload" href="assets/fonts/bodoni-moda.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/dm-serif-display-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" as="image" href="assets/img/copertina-800.webp" imagesrcset="assets/img/copertina-480.webp 480w, assets/img/copertina-800.webp 800w, assets/img/copertina-1200.webp 1200w, assets/img/copertina-1600.webp 1600w" imagesizes="(min-width: 64em) 46vw, 100vw">
-  <link rel="stylesheet" href="assets/css/style.css?v=2">
-  <link rel="stylesheet" href="assets/css/home.css?v=2">
+  <link rel="stylesheet" href="assets/css/style.css?v=14">
+  <link rel="stylesheet" href="assets/css/home.css?v=14">
   <script>document.documentElement.classList.add('js')</script>
 </head>
 <body class="page-home has-dock">
   <a class="skip" href="#contenuto">Vai al contenuto</a>
 
   <header class="mast mast--cover" data-mast>
-    <p class="mast__issue" aria-hidden="true">Numero speciale</p>
-    <a class="mast__name" href="index.html" aria-label="Atelier Filo, torna alla copertina">Atelier <span>Filo</span></a>
+    <a class="mast__name" href="index.html" aria-label="Atelier Filo, vai alla home">Atelier <span>Filo</span></a>
     <nav class="mast__nav" aria-label="Principale">
-      <a href="#colore">Il colore</a>
-      <a href="servizi.html">Listino</a>
-      <a href="#salone">Orari e indirizzo</a>
+      <a href="servizi.html">Servizi e prezzi</a>
+      <a href="index.html#colore">Colore</a>
+      <a href="index.html#orari">Orari e indirizzo</a>
     </nav>
     <a class="btn btn--copper mast__book" href="prenota.html">Prenota</a>
-    <button class="mast__menu" type="button" aria-expanded="false" aria-controls="indice" data-menu-open>
-      Indice <span class="mast__menu-lines" aria-hidden="true"></span>
+    <button class="mast__menu" type="button" aria-expanded="false" aria-controls="menu" data-menu-open>
+      Menu <span class="mast__menu-lines" aria-hidden="true"></span>
     </button>
   </header>
 
-  <div class="index" id="indice" role="dialog" aria-modal="true" aria-label="Indice del sito" data-menu>
+  <div class="index" id="menu" role="dialog" aria-modal="true" aria-label="Menu" data-menu>
     <div class="index__veil" data-menu-close></div>
     <div class="index__sheet">
       <div class="index__top">
-        <span class="kicker">Indice</span>
-        <button class="index__close" type="button" aria-label="Chiudi l'indice" data-menu-close>&times;</button>
+        <span class="kicker">Menu</span>
+        <button class="index__close" type="button" aria-label="Chiudi il menu" data-menu-close>&times;</button>
       </div>
       <ol class="index__list">
-        <li><a href="index.html" aria-current="page"><span class="index__num">01</span><span class="index__label">Copertina</span></a></li>
-        <li><a href="#colore"><span class="index__num">04</span><span class="index__label">Il colore</span></a></li>
-        <li><a href="#taglio"><span class="index__num">06</span><span class="index__label">Il taglio</span></a></li>
-        <li><a href="#cerimonie"><span class="index__num">10</span><span class="index__label">Cerimonie</span></a></li>
-        <li><a href="servizi.html"><span class="index__num">12</span><span class="index__label">Listino e prezzi</span></a></li>
-        <li><a href="#salone"><span class="index__num">14</span><span class="index__label">Orari e indirizzo</span></a></li>
+        <li><a href="index.html" aria-current="page"><span class="index__num">01</span><span class="index__label">Home</span></a></li>
+        <li><a href="servizi.html"><span class="index__num">02</span><span class="index__label">Servizi e prezzi</span></a></li>
+        <li><a href="index.html#colore"><span class="index__num">03</span><span class="index__label">Colore</span></a></li>
+        <li><a href="index.html#cerimonie"><span class="index__num">04</span><span class="index__label">Cerimonie</span></a></li>
+        <li><a href="index.html#orari"><span class="index__num">05</span><span class="index__label">Orari e indirizzo</span></a></li>
+        <li><a href="prenota.html"><span class="index__num">06</span><span class="index__label">Prenota</span></a></li>
       </ol>
       <div class="index__foot">
-        <a class="btn btn--copper" href="prenota.html">Prenota il tuo posto <span class="btn__arrow" aria-hidden="true">→</span></a>
-        <p>Si prenota in tre passi: servizio, giorno, ora.</p>
+        <a class="btn btn--copper" href="prenota.html">Prenota un appuntamento <span class="btn__arrow" aria-hidden="true">→</span></a>
+        <p>Martedì–venerdì 9–19, sabato 8:30–18 (orari di esempio).</p>
       </div>
     </div>
   </div>
 
   <main id="contenuto">
 
-    <!-- 01 Copertina -->
+    <!-- Copertina -->
     <section class="cover" aria-labelledby="titolo">
-      <p class="cover__tag" data-cover-in>Parrucchiere · donna e uomo</p>
+      <p class="cover__tag" data-cover-in>Parrucchiere per donna e uomo</p>
       <h1 class="cover__mast" id="titolo">
         <span class="cover__pre" data-cover-in>Atelier</span>
         <span class="cover__name" data-cover-in>Fil<span class="cover__o">o<span class="cover__start" data-hair-start></span></span></span>
       </h1>
-      <figure class="cover__photo" data-cover-photo data-hair-halo>
-        <img src="assets/img/copertina-800.webp"
-             srcset="assets/img/copertina-480.webp 480w, assets/img/copertina-800.webp 800w, assets/img/copertina-1200.webp 1200w, assets/img/copertina-1600.webp 1600w"
-             sizes="(min-width: 64em) 46vw, 100vw" width="1600" height="2616"
-             alt="Capelli ramati lunghi visti da dietro, raccolti in un nodo morbido con un ricciolo che scende" fetchpriority="high">
+      <figure class="cover__photo" data-hair-halo>
+        <img src="assets/img/copertina-800.webp" srcset="assets/img/copertina-480.webp 480w, assets/img/copertina-800.webp 800w, assets/img/copertina-1200.webp 1200w, assets/img/copertina-1600.webp 1600w" sizes="(min-width: 64em) 46vw, 100vw" width="1600" height="2616" fetchpriority="high" alt="Capelli ramati lunghi visti da dietro, raccolti in un nodo morbido con un ricciolo che scende">
       </figure>
       <ul class="cover__lines">
-        <li data-cover-in><a href="#colore"><span>p. 04</span> Il colore che arriva al ritocco senza spegnersi</a></li>
-        <li data-cover-in><a href="#taglio"><span>p. 06</span> Ricci tagliati a secco, uno per uno</a></li>
-        <li data-cover-in><a href="#cerimonie"><span>p. 10</span> Il raccolto per il giorno del sì</a></li>
+        <li data-cover-in><a href="servizi.html?filtro=donna"><span>Donna e uomo</span> Taglio e piega</a></li>
+        <li data-cover-in><a href="#colore"><span>Colore</span> Riflessi, schiariture, balayage</a></li>
+        <li data-cover-in><a href="#cerimonie"><span>Cerimonie</span> Raccolti per il giorno del sì</a></li>
       </ul>
       <div class="cover__cta" data-cover-in>
-        <a class="btn btn--copper" href="prenota.html">Prenota il tuo posto <span class="btn__arrow" aria-hidden="true">→</span></a>
-        <a class="text-link" href="servizi.html">Prezzi e listino</a>
+        <a class="btn btn--copper" href="prenota.html">Prenota un appuntamento <span class="btn__arrow" aria-hidden="true">→</span></a>
+        <a class="text-link" href="servizi.html">Servizi e prezzi</a>
       </div>
-      <p class="cover__barcode" aria-label="Avviso: prezzi e orari di esempio">
+      <p class="cover__barcode">
         <span class="cover__bars" aria-hidden="true"></span>
         <span>Prezzi e orari di esempio</span>
       </p>
       <div class="glyph glyph--cover" data-hair="ricciolo" aria-hidden="true"></div>
     </section>
 
-    <!-- 02 Sommario -->
-    <section class="contents" aria-labelledby="sommario-titolo">
-      <p class="folio" aria-hidden="true"><b>02</b> Sommario</p>
+    <!-- Servizi in breve -->
+    <section class="contents" aria-labelledby="servizi-titolo">
+      <p class="folio" aria-hidden="true"><b>02</b> Servizi</p>
       <div class="contents__inner">
-        <h2 class="contents__title rise" id="sommario-titolo">In questo<br><em>numero</em></h2>
+        <div>
+          <h2 class="contents__title rise" id="servizi-titolo">Cosa facciamo, <em>e quanto costa</em></h2>
+          <p class="note rise">Prezzi di esempio. Tocca un servizio per vedere il listino completo.</p>
+        </div>
         <ol class="contents__list">
-          <li class="rise"><a href="#colore"><span class="contents__num">04</span><span class="contents__name">Il colore</span><span class="contents__desc">Ricrescita, balayage, tonalizzante</span></a></li>
-          <li class="rise" data-delay="1"><a href="#taglio"><span class="contents__num">06</span><span class="contents__name">Il taglio</span><span class="contents__desc">Le domande prima delle forbici</span></a></li>
-          <li class="rise" data-delay="2"><a href="#cerimonie"><span class="contents__num">10</span><span class="contents__name">Cerimonie</span><span class="contents__desc">Prova, giorno prima, giorno del sì</span></a></li>
-          <li class="rise" data-delay="3"><a href="servizi.html"><span class="contents__num">12</span><span class="contents__name">Il listino</span><span class="contents__desc">Donna, uomo, colore</span></a></li>
-          <li class="rise" data-delay="3"><a href="#salone"><span class="contents__num">14</span><span class="contents__name">Orari e indirizzo</span><span class="contents__desc">Aperto dal martedì al sabato</span></a></li>
+          <li class="rise"><a href="servizi.html?filtro=donna"><span class="contents__num">01</span><span class="contents__name">Taglio e piega</span><span class="contents__price">45 €</span><span class="contents__desc">Donna: consulenza, taglio, lavaggio e piega</span></a></li>
+          <li class="rise" data-delay="1"><a href="servizi.html?filtro=uomo"><span class="contents__num">02</span><span class="contents__name">Taglio uomo</span><span class="contents__price">20 €</span><span class="contents__desc">Forbici e macchinetta, lavaggio compreso</span></a></li>
+          <li class="rise" data-delay="2"><a href="servizi.html?filtro=colore"><span class="contents__num">03</span><span class="contents__name">Colore</span><span class="contents__price">da 25 €</span><span class="contents__desc">Ricrescita, colore completo, tonalizzante</span></a></li>
+          <li class="rise" data-delay="3"><a href="servizi.html?filtro=colore"><span class="contents__num">04</span><span class="contents__name">Schiariture e balayage</span><span class="contents__price">da 80 €</span><span class="contents__desc">Riflessi sfumati fatti a mano libera</span></a></li>
+          <li class="rise" data-delay="3"><a href="servizi.html?filtro=donna"><span class="contents__num">05</span><span class="contents__name">Raccolti da cerimonia</span><span class="contents__price">da 40 €</span><span class="contents__desc">Prova acconciatura e raccolto del giorno</span></a></li>
         </ol>
       </div>
-      <div class="glyph glyph--contents" data-hair="f" aria-hidden="true"></div>
     </section>
 
-    <!-- 04 Il colore -->
+    <!-- Colore -->
     <section class="color" id="colore" aria-labelledby="colore-titolo">
-      <p class="folio" aria-hidden="true"><b>04</b> Il colore</p>
+      <p class="folio" aria-hidden="true"><b>03</b> Colore</p>
       <figure class="color__photo unveil" data-hair-halo>
-        <img src="assets/img/riflesso-800.webp"
-             srcset="assets/img/riflesso-480.webp 480w, assets/img/riflesso-800.webp 800w, assets/img/riflesso-1200.webp 1200w, assets/img/riflesso-1600.webp 1600w"
-             sizes="(min-width: 64em) 40vw, 92vw" width="1600" height="1920" loading="lazy"
-             alt="Primo piano di capelli castani con riflessi rame accesi dalla luce">
+        <img src="assets/img/riflesso-800.webp" srcset="assets/img/riflesso-480.webp 480w, assets/img/riflesso-800.webp 800w, assets/img/riflesso-1200.webp 1200w, assets/img/riflesso-1600.webp 1600w" sizes="(min-width: 64em) 40vw, 82vw" width="1600" height="1920" loading="lazy" alt="Primo piano di capelli castani con riflessi rame accesi dalla luce">
       </figure>
       <div class="color__text">
-        <p class="kicker rise">Servizio speciale</p>
-        <h2 class="color__title rise" id="colore-titolo">Il colore<br>non è <em>una tinta.</em></h2>
-        <p class="color__lead rise">È una base, un riflesso e un tempo di posa. Prima di aprire un tubetto guardiamo il tuo capello alla luce della vetrina, non sotto il neon.</p>
+        <p class="kicker rise">Colore e schiariture</p>
+        <h2 class="color__title rise" id="colore-titolo">Il colore giusto <em>per il tuo capello</em></h2>
+        <p class="color__lead rise">Prima di scegliere guardiamo insieme la tua base alla luce del giorno. Poi decidiamo il colore e ogni quanto ritoccarlo.</p>
         <ul class="color__facts">
-          <li class="rise"><strong>48 ore prima</strong> facciamo il test di sensibilità, se è il tuo primo colore da noi.</li>
-          <li class="rise" data-delay="1"><strong>Ogni 4–6 settimane</strong> il ritocco della ricrescita, sui 2–3 cm di radice.</li>
-          <li class="rise" data-delay="2"><strong>Fra un colore e l'altro</strong> il tonalizzante riporta il riflesso che il sole e i lavaggi hanno spento.</li>
+          <li class="rise"><strong>48 ore prima</strong> facciamo il test di sensibilità, se è il tuo primo colore da noi. È gratuito.</li>
+          <li class="rise" data-delay="1"><strong>Ogni 4–6 settimane</strong> si ritocca la ricrescita, sui 2–3 cm di radice.</li>
+          <li class="rise" data-delay="2"><strong>Fra un colore e l'altro</strong> il tonalizzante riporta il riflesso spento da sole e lavaggi.</li>
         </ul>
       </div>
 
       <div class="fan-block">
-        <h3 class="fan-block__title rise">Tocca una ciocca della cartella colori</h3>
+        <h3 class="fan-block__title rise">Tocca una ciocca: ti diciamo come si ottiene</h3>
         <div class="fan" role="group" aria-label="Cartella colori" data-fan>
           <button class="fan__strand" type="button" aria-pressed="false" data-tone="cioccolato" style="--tone-a:#3a2318;--tone-b:#5a3626;--r:-24deg"><span class="visually-hidden">Castano cioccolato</span></button>
           <button class="fan__strand" type="button" aria-pressed="false" data-tone="rame" style="--tone-a:#8a3c1c;--tone-b:#c0612f;--r:-12deg"><span class="visually-hidden">Rame</span></button>
@@ -150,31 +146,26 @@
           <a class="text-link" href="prenota.html?servizio=balayage">Prenota questo colore</a>
         </div>
       </div>
-      <div class="glyph glyph--color" data-hair="nodo" aria-hidden="true"></div>
     </section>
 
-    <!-- 06 Il taglio -->
+    <!-- Taglio -->
     <section class="cut" id="taglio" aria-labelledby="taglio-titolo">
-      <p class="folio" aria-hidden="true"><b>06</b> Il taglio</p>
+      <p class="folio" aria-hidden="true"><b>04</b> Taglio</p>
       <header class="cut__head">
-        <p class="kicker rise">L'intervista</p>
-        <h2 class="cut__title rise" id="taglio-titolo">Cinque domande<br><em>prima delle forbici</em></h2>
+        <p class="kicker rise">Il taglio</p>
+        <h2 class="cut__title rise" id="taglio-titolo">Le domande che ci fai <em>più spesso</em></h2>
       </header>
       <figure class="cut__photo unveil" data-hair-halo>
-        <img src="assets/img/taglio-800.webp"
-             srcset="assets/img/taglio-480.webp 480w, assets/img/taglio-800.webp 800w, assets/img/taglio-1200.webp 1200w, assets/img/taglio-1600.webp 1600w"
-             sizes="(min-width: 64em) 34vw, 100vw" width="1600" height="2000" loading="lazy"
-             alt="In bianco e nero: mani che tagliano una ciocca di capelli bagnati con le forbici">
-        <figcaption>La ciocca si prende fra due dita: la lunghezza la decide il dito, non l'occhio.</figcaption>
+        <img src="assets/img/taglio-800.webp" srcset="assets/img/taglio-480.webp 480w, assets/img/taglio-800.webp 800w, assets/img/taglio-1200.webp 1200w, assets/img/taglio-1600.webp 1600w" sizes="(min-width: 64em) 34vw, 100vw" width="1600" height="2000" loading="lazy" alt="In bianco e nero: mani che tagliano una ciocca di capelli bagnati con le forbici">
       </figure>
       <div class="cut__qa">
         <div class="qa rise">
           <p class="qa__q">Porto una foto?</p>
-          <p class="qa__a">Sì, anche due: una di quello che ti piace e una di quello che non vuoi più vedere. La seconda aiuta di più.</p>
+          <p class="qa__a">Sì, anche due: una di quello che ti piace e una di quello che non vuoi più. La seconda aiuta di più.</p>
         </div>
         <div class="qa rise">
           <p class="qa__q">Bagnati o asciutti?</p>
-          <p class="qa__a">Il liscio si taglia bagnato. Il riccio si taglia asciutto, un riccio alla volta, perché bagnato si allunga e mente sulla lunghezza vera.</p>
+          <p class="qa__a">Il liscio si taglia bagnato. Il riccio si taglia asciutto, un riccio alla volta: bagnato si allunga e inganna sulla lunghezza.</p>
         </div>
         <div class="qa rise">
           <p class="qa__q">Voglio scalare, ma non perdere volume.</p>
@@ -182,139 +173,88 @@
         </div>
         <div class="qa rise">
           <p class="qa__q">E la frangia?</p>
-          <p class="qa__a">La proviamo prima con il pettine, tenuta giù sulla fronte. Se fra un taglio e l'altro ti finisce negli occhi, passi e la sistemiamo in cinque minuti.</p>
+          <p class="qa__a">La proviamo prima con il pettine. Se fra un taglio e l'altro ti finisce negli occhi, passi e la sistemiamo in cinque minuti.</p>
         </div>
         <div class="qa rise">
           <p class="qa__q">Ogni quanto devo tornare?</p>
-          <p class="qa__a">Un taglio corto regge 4–6 settimane, un caschetto 6–8, i capelli lunghi anche tre mesi se spunti le punte.</p>
+          <p class="qa__a">Un taglio corto regge 4–6 settimane, un caschetto 6–8, i capelli lunghi anche tre mesi.</p>
         </div>
       </div>
-      <figure class="cut__inset unveil">
-        <img src="assets/img/bob-480.webp"
-             srcset="assets/img/bob-480.webp 480w, assets/img/bob-800.webp 800w"
-             sizes="(min-width: 64em) 18vw, 48vw" width="1600" height="2077" loading="lazy"
-             alt="Caschetto castano liscio visto da dietro, con la linea delle punte netta">
-        <figcaption>Caschetto pari: la linea si controlla allo specchio a mano, con la testa dritta.</figcaption>
+      <figure class="cut__inset unveil" data-hair-halo>
+        <img src="assets/img/bob-800.webp" srcset="assets/img/bob-480.webp 480w, assets/img/bob-800.webp 800w" sizes="(min-width: 64em) 18vw, 62vw" width="1600" height="2077" loading="lazy" alt="Caschetto castano liscio visto da dietro, con la linea delle punte netta">
       </figure>
+      <div class="glyph glyph--cut" data-hair="forbici" aria-hidden="true"></div>
     </section>
 
-    <!-- 08 Pagina quasi vuota -->
-    <section class="quiet" aria-labelledby="quiet-titolo">
-      <p class="folio" aria-hidden="true"><b>08</b> Editoriale</p>
-      <h2 class="quiet__line rise" id="quiet-titolo">Prima<br>ascoltiamo.<br><em>Poi le forbici.</em></h2>
-      <figure class="quiet__scissors rise" data-hair-halo data-delay="1">
-        <img src="assets/img/forbici-480.webp"
-             srcset="assets/img/forbici-480.webp 480w, assets/img/forbici-800.webp 800w"
-             sizes="(min-width: 64em) 22vw, 58vw" width="1600" height="1064" loading="lazy"
-             alt="Un paio di forbici da parrucchiere aperte su fondo nero">
-      </figure>
-      <div class="glyph glyph--quiet" data-hair="forbici" aria-hidden="true"></div>
-    </section>
-
-    <!-- 10 Cerimonie -->
+    <!-- Cerimonie -->
     <section class="ceremony on-dark" id="cerimonie" aria-labelledby="cerimonie-titolo">
-      <p class="folio" aria-hidden="true"><b>10</b> Cerimonie</p>
+      <p class="folio" aria-hidden="true"><b>05</b> Cerimonie</p>
       <figure class="ceremony__photo">
-        <img src="assets/img/raccolto-800.webp"
-             srcset="assets/img/raccolto-480.webp 480w, assets/img/raccolto-800.webp 800w, assets/img/raccolto-1200.webp 1200w, assets/img/raccolto-1600.webp 1600w"
-             sizes="100vw" width="1600" height="1963" loading="lazy"
-             alt="Raccolto morbido biondo con piccoli fiori bianchi e perle fra le ciocche, visto da dietro">
+        <img src="assets/img/raccolto-800.webp" srcset="assets/img/raccolto-480.webp 480w, assets/img/raccolto-800.webp 800w, assets/img/raccolto-1200.webp 1200w, assets/img/raccolto-1600.webp 1600w" sizes="(min-width: 64em) 55vw, 100vw" width="1600" height="1963" loading="lazy" alt="Raccolto morbido biondo con piccoli fiori bianchi e perle fra le ciocche, visto da dietro">
       </figure>
       <div class="ceremony__body">
-        <h2 class="ceremony__title rise" id="cerimonie-titolo">Il giorno<br><em>del sì</em></h2>
-        <p class="ceremony__lead rise">Sposa, testimone, mamma della sposa. Il raccolto si decide alla prova, non la mattina stessa.</p>
+        <h2 class="ceremony__title rise" id="cerimonie-titolo">Matrimoni <em>e cerimonie</em></h2>
+        <p class="ceremony__lead rise">Per la sposa, la testimone, la mamma. Il raccolto si decide alla prova, non la mattina stessa.</p>
         <ol class="timeline">
-          <li class="rise"><span class="timeline__when">3 settimane prima</span><span class="timeline__what">La prova, con le forcine e gli accessori che porterai. Facciamo le foto da tre lati.</span></li>
+          <li class="rise"><span class="timeline__when">3 settimane prima</span><span class="timeline__what">La prova, con gli accessori che porterai. Facciamo le foto da tre lati.</span></li>
           <li class="rise" data-delay="1"><span class="timeline__when">Una settimana prima</span><span class="timeline__what">Il ritocco del colore, così il riflesso è acceso ma non appena fatto.</span></li>
           <li class="rise" data-delay="2"><span class="timeline__when">Il giorno prima</span><span class="timeline__what">Lavaggio e asciugatura: un capello pulito da poche ore tiene meglio le forcine.</span></li>
-          <li class="rise" data-delay="3"><span class="timeline__when">Il giorno del sì</span><span class="timeline__what">Il raccolto, con la lacca leggera in borsa per la sera.</span></li>
+          <li class="rise" data-delay="3"><span class="timeline__when">Il giorno del sì</span><span class="timeline__what">Il raccolto, e una lacca leggera in borsa per la sera.</span></li>
         </ol>
         <a class="btn btn--light rise" href="prenota.html?servizio=prova-raccolto">Prenota la prova acconciatura</a>
       </div>
       <div class="glyph glyph--ceremony" data-hair="onda" aria-hidden="true"></div>
     </section>
 
-    <!-- 12 Prezzi in breve -->
-    <section class="prices" aria-labelledby="prezzi-titolo">
-      <p class="folio" aria-hidden="true"><b>12</b> Prezzi</p>
-      <div class="prices__inner">
-        <h2 class="prices__title rise" id="prezzi-titolo">Quanto<br><em>costa</em></h2>
-        <p class="note rise">Prezzi di esempio. Il listino completo divide donna, uomo e colore.</p>
-        <ul class="pricelist">
-          <li class="rise"><span class="pricelist__name">Piega capelli lunghi</span><span class="pricelist__dots" aria-hidden="true"></span><span class="pricelist__price">26 €</span></li>
-          <li class="rise"><span class="pricelist__name">Taglio e piega</span><span class="pricelist__dots" aria-hidden="true"></span><span class="pricelist__price">45 €</span></li>
-          <li class="rise"><span class="pricelist__name">Taglio uomo</span><span class="pricelist__dots" aria-hidden="true"></span><span class="pricelist__price">20 €</span></li>
-          <li class="rise"><span class="pricelist__name">Ritocco ricrescita</span><span class="pricelist__dots" aria-hidden="true"></span><span class="pricelist__price">38 €</span></li>
-          <li class="rise"><span class="pricelist__name">Balayage</span><span class="pricelist__dots" aria-hidden="true"></span><span class="pricelist__price">da 110 €</span></li>
-        </ul>
-        <a class="btn btn--ghost rise" href="servizi.html">Tutto il listino <span class="btn__arrow" aria-hidden="true">→</span></a>
-      </div>
-      <figure class="prices__photo unveil" data-hair-halo>
-        <img src="assets/img/uomo-480.webp"
-             srcset="assets/img/uomo-480.webp 480w, assets/img/uomo-800.webp 800w, assets/img/uomo-1200.webp 1200w"
-             sizes="(min-width: 64em) 30vw, 60vw" width="1200" height="1251" loading="lazy"
-             alt="In bianco e nero: la nuca di un uomo con un taglio corto e sfumato">
-        <figcaption>Anche per lui: taglio con forbici e macchinetta, lavaggio compreso.</figcaption>
-      </figure>
-    </section>
-
-    <!-- 14 Il salone -->
-    <section class="salon" id="salone" aria-labelledby="salone-titolo">
-      <p class="folio" aria-hidden="true"><b>14</b> Il salone</p>
+    <!-- Orari e indirizzo -->
+    <section class="salon" id="orari" aria-labelledby="salone-titolo">
+      <p class="folio" aria-hidden="true"><b>06</b> Orari</p>
       <figure class="salon__photo unveil" data-hair-halo>
-        <img src="assets/img/salone-800.webp"
-             srcset="assets/img/salone-480.webp 480w, assets/img/salone-800.webp 800w, assets/img/salone-1200.webp 1200w, assets/img/salone-1600.webp 1600w"
-             sizes="(min-width: 64em) 48vw, 100vw" width="1600" height="1536" loading="lazy"
-             alt="In bianco e nero: tre poltrone da parrucchiere davanti a specchi tondi su una parete scura">
+        <img src="assets/img/salone-800.webp" srcset="assets/img/salone-480.webp 480w, assets/img/salone-800.webp 800w, assets/img/salone-1200.webp 1200w, assets/img/salone-1600.webp 1600w" sizes="(min-width: 64em) 48vw, 100vw" width="1600" height="1536" loading="lazy" alt="In bianco e nero: tre poltrone da parrucchiere davanti a specchi tondi su una parete scura">
       </figure>
       <div class="salon__text">
-        <h2 class="salon__title rise" id="salone-titolo">Orari<br><em>e indirizzo</em></h2>
+        <h2 class="salon__title rise" id="salone-titolo">Orari <em>e indirizzo</em></h2>
+        <p class="hours__today" data-hours-today hidden></p>
         <dl class="hours" data-hours>
           <div data-day="2 3 4 5"><dt>Martedì – venerdì</dt><dd>9:00 – 19:00</dd></div>
           <div data-day="6"><dt>Sabato</dt><dd>8:30 – 18:00</dd></div>
           <div data-day="0 1"><dt>Domenica e lunedì</dt><dd>Chiuso</dd></div>
         </dl>
-        <p class="hours__today" data-hours-today hidden></p>
         <p class="note">Orari di esempio. Orario continuato: si può venire anche in pausa pranzo.</p>
         <address class="salon__address">
           <span>Via dell'Esempio 1</span>
           <span class="note">Indirizzo di esempio: l'attività è inventata.</span>
         </address>
         <div class="salon__actions">
-          <a class="btn btn--copper" href="prenota.html">Prenota il tuo posto</a>
-          <a class="btn btn--ghost" href="https://wa.me/393517578080?text=Ciao%20Mockly%2C%20sto%20guardando%20la%20demo%20Atelier%20Filo%20e%20vorrei%20un%20sito%20cos%C3%AC%20per%20il%20mio%20salone." target="_blank" rel="noopener">Scrivi su WhatsApp</a>
+          <a class="btn btn--copper" href="prenota.html">Prenota un appuntamento</a>
+          <a class="btn btn--ghost" href="https://wa.me/393517578080?text=Ciao%2C%20sto%20guardando%20la%20demo%20Atelier%20Filo%20di%20Mockly%20e%20ho%20una%20domanda." target="_blank" rel="noopener">Scrivi su WhatsApp</a>
         </div>
-        <p class="note">Il WhatsApp di questa demo arriva a Mockly, non a un salone.</p>
+        <p class="note">In questa demo il WhatsApp arriva a Mockly, non a un salone.</p>
       </div>
-      <div class="glyph glyph--salon" data-hair="ricciolo" aria-hidden="true"></div>
     </section>
 
-    <!-- 15 Posta -->
-    <section class="letters" aria-labelledby="posta-titolo">
-      <p class="folio" aria-hidden="true"><b>15</b> Posta</p>
-      <h2 class="letters__title rise" id="posta-titolo">La posta<br><em>delle clienti</em></h2>
+    <!-- Recensioni -->
+    <section class="letters" aria-labelledby="recensioni-titolo">
+      <p class="folio" aria-hidden="true"><b>07</b> Recensioni</p>
+      <h2 class="letters__title rise" id="recensioni-titolo">Recensioni</h2>
       <div class="letters__slot rise">
         <span class="letters__mark" aria-hidden="true">“</span>
         <p>Qui vanno le recensioni dei tuoi clienti.</p>
-        <p class="note">In una demo non mettiamo recensioni inventate. Sul tuo sito, queste righe le scrivono le tue clienti.</p>
+        <p class="note">In una demo non inventiamo recensioni. Sul tuo sito, queste righe le scrivono le tue clienti.</p>
       </div>
     </section>
 
-    <!-- 16 Retro di copertina -->
-    <section class="back on-dark" aria-labelledby="retro-titolo">
-      <p class="folio" aria-hidden="true"><b>16</b> Retro</p>
+    <!-- Finale -->
+    <section class="back on-dark" aria-labelledby="finale-titolo">
+      <p class="folio" aria-hidden="true"><b>08</b> Prenota</p>
       <figure class="back__photo">
-        <img src="assets/img/lunghi-800.webp"
-             srcset="assets/img/lunghi-480.webp 480w, assets/img/lunghi-800.webp 800w, assets/img/lunghi-1200.webp 1200w, assets/img/lunghi-1600.webp 1600w"
-             sizes="(min-width: 64em) 44vw, 100vw" width="1600" height="3257" loading="lazy"
-             alt="Lunghi capelli biondi mossi, appena asciugati, visti da dietro in un salone">
+        <img src="assets/img/lunghi-800.webp" srcset="assets/img/lunghi-480.webp 480w, assets/img/lunghi-800.webp 800w, assets/img/lunghi-1200.webp 1200w, assets/img/lunghi-1600.webp 1600w" sizes="(min-width: 64em) 50vw, 100vw" width="1600" height="3257" loading="lazy" alt="Lunghi capelli biondi mossi, appena asciugati, visti da dietro in un salone">
       </figure>
       <div class="back__text">
-        <p class="kicker rise">Fine del numero</p>
-        <h2 class="back__title rise" id="retro-titolo">Ci vediamo<br><em>allo specchio.</em></h2>
+        <h2 class="back__title rise" id="finale-titolo">Ci vediamo <em>allo specchio.</em></h2>
         <div class="glyph glyph--back" data-hair="firma" aria-hidden="true"></div>
-        <p class="back__lead rise">Scegli il servizio, il giorno e l'ora. Al resto pensiamo noi, poltrona compresa.</p>
-        <a class="btn btn--light rise" href="prenota.html">Prenota il tuo posto <span class="btn__arrow" aria-hidden="true">→</span></a>
+        <p class="back__lead rise">Scegli il servizio, il giorno e l'ora. Ci vuole un minuto.</p>
+        <a class="btn btn--light rise" href="prenota.html">Prenota un appuntamento <span class="btn__arrow" aria-hidden="true">→</span></a>
       </div>
     </section>
   </main>
@@ -328,8 +268,8 @@
       <div>
         <h2>Pagine</h2>
         <ul>
-          <li><a href="index.html">Copertina</a></li>
-          <li><a href="servizi.html">Listino e prezzi</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="servizi.html">Servizi e prezzi</a></li>
           <li><a href="prenota.html">Prenota</a></li>
         </ul>
       </div>
@@ -349,16 +289,16 @@
     </div>
     <div class="demo-note">
       <p>Sito dimostrativo realizzato da Mockly. L'attività è inventata.</p>
-      <p>Vuoi un sito così per il tuo lavoro? <a href="https://wa.me/393517578080?text=Ciao%20Mockly%2C%20ho%20visto%20la%20demo%20Atelier%20Filo%20e%20vorrei%20un%20sito%20cos%C3%AC." target="_blank" rel="noopener">Scrivici su WhatsApp</a></p>
+      <p>Vuoi un sito così per il tuo lavoro? <a href="https://wa.me/393517578080?text=Ciao%20Mockly%2C%20ho%20visto%20la%20demo%20Atelier%20Filo%20e%20vorrei%20un%20sito%20cos%C3%AC%20per%20il%20mio%20lavoro." target="_blank" rel="noopener">Scrivici su WhatsApp</a></p>
     </div>
   </footer>
 
   <nav class="dock" aria-label="Azioni rapide" data-dock>
-    <a class="btn btn--copper" href="prenota.html">Prenota il tuo posto</a>
+    <a class="btn btn--copper" href="prenota.html">Prenota un appuntamento</a>
     <a class="btn btn--ghost" href="servizi.html">Prezzi</a>
   </nav>
 
-  <script src="assets/js/main.js?v=2"></script>
-  <script src="assets/js/home.js?v=2"></script>
+  <script src="assets/js/main.js?v=14"></script>
+  <script src="assets/js/home.js?v=14"></script>
 </body>
 </html>
